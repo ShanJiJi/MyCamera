@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "CardIO.h"
+#import "CardIOPaymentViewControllerDelegate.h"
+#import "MyCameraViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<CardIOPaymentViewControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -16,12 +21,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.label.text = @"";
+    [CardIOUtilities preload];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//点击进入信用卡扫描界面
+- (IBAction)btnAction:(id)sender {
+    
+    CardIOPaymentViewController *scanVC = [[CardIOPaymentViewController alloc] initWithPaymentDelegate:self];
+    [self presentViewController:scanVC animated:YES completion:nil];
+    
 }
+
+-(void)userDidCancelPaymentViewController:(CardIOPaymentViewController *)paymentViewController{
+    
+    [paymentViewController dismissViewControllerAnimated:YES completion:nil];
+
+}
+
+-(void)userDidProvideCreditCardInfo:(CardIOCreditCardInfo *)cardInfo inPaymentViewController:(CardIOPaymentViewController *)paymentViewController{
+    //扫描结果
+    NSLog(@"Received card info. Number: %@, expiry: %02i/%i, cvv: %@.", cardInfo.redactedCardNumber, cardInfo.expiryMonth, cardInfo.expiryYear, cardInfo.cvv);
+    
+    [paymentViewController dismissViewControllerAnimated:YES completion:nil];
+
+}
+
+
+- (IBAction)openMyCamera:(id)sender {
+    
+    MyCameraViewController *myCamera = [[MyCameraViewController alloc] init];
+    
+    [self presentViewController:myCamera animated:YES completion:nil];
+    
+}
+
+
+
 
 @end

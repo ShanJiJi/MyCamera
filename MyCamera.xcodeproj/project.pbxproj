@@ -15,6 +15,18 @@
 		0456B9C91D178A93002EB517 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0456B9C71D178A93002EB517 /* LaunchScreen.storyboard */; };
 		0456B9D41D178A93002EB517 /* MyCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B9D31D178A93002EB517 /* MyCameraTests.m */; };
 		0456B9DF1D178A93002EB517 /* MyCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456B9DE1D178A93002EB517 /* MyCameraUITests.m */; };
+		0456B9F91D178BFD002EB517 /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456B9F61D178BFD002EB517 /* libCardIO.a */; };
+		0456B9FA1D178BFD002EB517 /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456B9F71D178BFD002EB517 /* libopencv_core.a */; };
+		0456B9FB1D178BFD002EB517 /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456B9F81D178BFD002EB517 /* libopencv_imgproc.a */; };
+		0456BA161D178F46002EB517 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456BA151D178F46002EB517 /* Accelerate.framework */; };
+		0456BA181D178F53002EB517 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456BA171D178F53002EB517 /* MobileCoreServices.framework */; };
+		0456BA1A1D178F5E002EB517 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456BA191D178F5E002EB517 /* CoreMedia.framework */; };
+		0456BA1C1D178F70002EB517 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456BA1B1D178F70002EB517 /* AudioToolbox.framework */; };
+		0456BA1E1D178F7D002EB517 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456BA1D1D178F7D002EB517 /* AVFoundation.framework */; };
+		0456BA221D1794F4002EB517 /* MyCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456BA201D1794F4002EB517 /* MyCameraViewController.m */; };
+		0456BA231D1794F4002EB517 /* MyCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0456BA211D1794F4002EB517 /* MyCameraViewController.xib */; };
+		0456BA251D179CF4002EB517 /* shootBackV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0456BA241D179CF4002EB517 /* shootBackV@2x.png */; };
+		0456BA271D179D15002EB517 /* takePic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0456BA261D179D15002EB517 /* takePic@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,27 @@
 		0456B9DA1D178A93002EB517 /* MyCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0456B9DE1D178A93002EB517 /* MyCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCameraUITests.m; sourceTree = "<group>"; };
 		0456B9E01D178A93002EB517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0456B9EE1D178BFD002EB517 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		0456B9EF1D178BFD002EB517 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		0456B9F01D178BFD002EB517 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		0456B9F11D178BFD002EB517 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		0456B9F21D178BFD002EB517 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		0456B9F31D178BFD002EB517 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		0456B9F41D178BFD002EB517 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		0456B9F51D178BFD002EB517 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		0456B9F61D178BFD002EB517 /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
+		0456B9F71D178BFD002EB517 /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
+		0456B9F81D178BFD002EB517 /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
+		0456BA151D178F46002EB517 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0456BA171D178F53002EB517 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0456BA191D178F5E002EB517 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0456BA1B1D178F70002EB517 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0456BA1D1D178F7D002EB517 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0456BA1F1D1794F4002EB517 /* MyCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCameraViewController.h; sourceTree = "<group>"; };
+		0456BA201D1794F4002EB517 /* MyCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCameraViewController.m; sourceTree = "<group>"; };
+		0456BA211D1794F4002EB517 /* MyCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCameraViewController.xib; sourceTree = "<group>"; };
+		0456BA241D179CF4002EB517 /* shootBackV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shootBackV@2x.png"; sourceTree = "<group>"; };
+		0456BA261D179D15002EB517 /* takePic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takePic@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0456BA1E1D178F7D002EB517 /* AVFoundation.framework in Frameworks */,
+				0456BA1C1D178F70002EB517 /* AudioToolbox.framework in Frameworks */,
+				0456BA1A1D178F5E002EB517 /* CoreMedia.framework in Frameworks */,
+				0456BA181D178F53002EB517 /* MobileCoreServices.framework in Frameworks */,
+				0456BA161D178F46002EB517 /* Accelerate.framework in Frameworks */,
+				0456B9F91D178BFD002EB517 /* libCardIO.a in Frameworks */,
+				0456B9FA1D178BFD002EB517 /* libopencv_core.a in Frameworks */,
+				0456B9FB1D178BFD002EB517 /* libopencv_imgproc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +122,7 @@
 		0456B9AD1D178A93002EB517 = {
 			isa = PBXGroup;
 			children = (
+				0456B9EC1D178BE3002EB517 /* framework */,
 				0456B9B81D178A93002EB517 /* MyCamera */,
 				0456B9D21D178A93002EB517 /* MyCameraTests */,
 				0456B9DD1D178A93002EB517 /* MyCameraUITests */,
@@ -110,6 +152,11 @@
 				0456B9C71D178A93002EB517 /* LaunchScreen.storyboard */,
 				0456B9CA1D178A93002EB517 /* Info.plist */,
 				0456B9B91D178A93002EB517 /* Supporting Files */,
+				0456BA1F1D1794F4002EB517 /* MyCameraViewController.h */,
+				0456BA201D1794F4002EB517 /* MyCameraViewController.m */,
+				0456BA241D179CF4002EB517 /* shootBackV@2x.png */,
+				0456BA261D179D15002EB517 /* takePic@2x.png */,
+				0456BA211D1794F4002EB517 /* MyCameraViewController.xib */,
 			);
 			path = MyCamera;
 			sourceTree = "<group>";
@@ -138,6 +185,37 @@
 				0456B9E01D178A93002EB517 /* Info.plist */,
 			);
 			path = MyCameraUITests;
+			sourceTree = "<group>";
+		};
+		0456B9EC1D178BE3002EB517 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				0456BA1D1D178F7D002EB517 /* AVFoundation.framework */,
+				0456BA1B1D178F70002EB517 /* AudioToolbox.framework */,
+				0456BA191D178F5E002EB517 /* CoreMedia.framework */,
+				0456BA171D178F53002EB517 /* MobileCoreServices.framework */,
+				0456BA151D178F46002EB517 /* Accelerate.framework */,
+				0456B9ED1D178BFD002EB517 /* CardIO */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		0456B9ED1D178BFD002EB517 /* CardIO */ = {
+			isa = PBXGroup;
+			children = (
+				0456B9EE1D178BFD002EB517 /* CardIO.h */,
+				0456B9EF1D178BFD002EB517 /* CardIOCreditCardInfo.h */,
+				0456B9F01D178BFD002EB517 /* CardIODetectionMode.h */,
+				0456B9F11D178BFD002EB517 /* CardIOPaymentViewController.h */,
+				0456B9F21D178BFD002EB517 /* CardIOPaymentViewControllerDelegate.h */,
+				0456B9F31D178BFD002EB517 /* CardIOUtilities.h */,
+				0456B9F41D178BFD002EB517 /* CardIOView.h */,
+				0456B9F51D178BFD002EB517 /* CardIOViewDelegate.h */,
+				0456B9F61D178BFD002EB517 /* libCardIO.a */,
+				0456B9F71D178BFD002EB517 /* libopencv_core.a */,
+				0456B9F81D178BFD002EB517 /* libopencv_imgproc.a */,
+			);
+			path = CardIO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +285,7 @@
 				TargetAttributes = {
 					0456B9B51D178A93002EB517 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = US3V2JJL69;
 					};
 					0456B9CE1D178A93002EB517 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,6 +323,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0456B9C91D178A93002EB517 /* LaunchScreen.storyboard in Resources */,
+				0456BA231D1794F4002EB517 /* MyCameraViewController.xib in Resources */,
+				0456BA271D179D15002EB517 /* takePic@2x.png in Resources */,
+				0456BA251D179CF4002EB517 /* shootBackV@2x.png in Resources */,
 				0456B9C61D178A93002EB517 /* Assets.xcassets in Resources */,
 				0456B9C41D178A93002EB517 /* Main.storyboard in Resources */,
 			);
@@ -271,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0456B9C11D178A93002EB517 /* ViewController.m in Sources */,
+				0456BA221D1794F4002EB517 /* MyCameraViewController.m in Sources */,
 				0456B9BE1D178A93002EB517 /* AppDelegate.m in Sources */,
 				0456B9BB1D178A93002EB517 /* main.m in Sources */,
 			);
@@ -415,10 +498,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhenwei.123.MyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +520,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CardIO",
+				);
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhenwei.123.MyCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
